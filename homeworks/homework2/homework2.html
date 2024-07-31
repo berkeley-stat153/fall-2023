@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Statistics 153: Introduction to Time Series</title>
+<title>Homework 2: [YOUR NAME HERE]</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,35 +100,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-buttons .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-button','listing-link','listing-color',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-button","listing-link","listing-color"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-buttons'] = new List('listing-buttons', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZLC7WVGHGY"></script>
 
 <script type="text/javascript">
@@ -137,100 +140,37 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="../../assets/styles.css">
 </head>
 
-<body class="nav-sidebar docked">
+<body>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
-</header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./assets/stat_bear.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">Stat 153</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://github.com/berkeley-153/fall-2023/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-</div>
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Home</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./syllabus.pdf" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Syllabus</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./homework.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Homework</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./supplementary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Supplementary Resources</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./license.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">License</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#simple-regression" id="toc-simple-regression" class="nav-link active" data-scroll-target="#simple-regression">Simple regression</a></li>
+  <li><a href="#multiple-regression" id="toc-multiple-regression" class="nav-link" data-scroll-target="#multiple-regression">Multiple regression</a></li>
+  <li><a href="#marginal-multiple-connection" id="toc-marginal-multiple-connection" class="nav-link" data-scroll-target="#marginal-multiple-connection">Marginal-multiple connection</a></li>
+  <li><a href="#covariance-calculations" id="toc-covariance-calculations" class="nav-link" data-scroll-target="#covariance-calculations">Covariance calculations</a></li>
+  <li><a href="#cross-validation" id="toc-cross-validation" class="nav-link" data-scroll-target="#cross-validation">Cross-validation</a></li>
+  <li><a href="#more-features-the-merrier" id="toc-more-features-the-merrier" class="nav-link" data-scroll-target="#more-features-the-merrier">More features, the merrier?</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Statistics 153: Introduction to Time Series</h1>
-<p class="subtitle lead">UC Berkeley, Fall 2023</p>
+<h1 class="title">Homework 2: [YOUR NAME HERE]</h1>
+<p class="subtitle lead">Introduction to Time Series, Fall 2023</p>
 </div>
 
 
@@ -238,6 +178,12 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
   
     
   </div>
@@ -247,49 +193,106 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-buttons" class="quarto-listing quarto-listing-container-custom">
-
-  <button style="background-color: purple;"><a href="syllabus">Syllabus</a></button>
-
-  <button style="background-color: green;"><a href="https://www.github.com/ryantibs/timeseries-f23/">GitHub</a></button>
-
-  <button style="background-color: orange;"><a href="https://edstem.org/us/courses/42044/">Ed Discussion</a></button>
-
-  <button style="background-color: blue;"><a href="https://bcourses.berkeley.edu/courses/1527046">bCourses</a></button>
-
-<div class="listing-no-matching d-none">
-No matching items
+<p>The total number of points possible for this homework is 35. The number of points for each question is written below, and questions marked as “bonus” are optional. Submit the <strong>knitted html file</strong> from this Rmd to Gradescope.</p>
+<p>If you collaborated with anybody for this homework, put their names here:</p>
+<section id="simple-regression" class="level1">
+<h1>Simple regression</h1>
+<ol type="1">
+<li>(2 pts) Derive the population least squares coefficients, which solve [ _{_1, _0} , , ] by differentiating the criterion with respect to each <span class="math inline">\(\beta_j\)</span>, setting equal to zero, and solving. Repeat the calculation but without intercept (without the <span class="math inline">\(\beta_0\)</span> coefficient in the model).</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+<ol start="2" type="1">
+<li>(2 pts) As in Q1, now derive the sample least squares coefficients, which solve [ _{_1, <em>0} , </em>{i=1}^n (y_i - _0 - _1 x_i)^2. ] Again, repeat the calculation but without intercept (no <span class="math inline">\(\beta_0\)</span> in the model).</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+<ol start="3" type="1">
+<li>(2 pts) Prove of disprove: in the model without intercept, is the regression coefficient of <span class="math inline">\(x\)</span> on <span class="math inline">\(y\)</span> the inverse of that from the regression of <span class="math inline">\(y\)</span> on <span class="math inline">\(x\)</span>? Answer the question for each of the the population and sample versions.</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+<ol start="4" type="1">
+<li>(3 pts) Consider the following hypothetical. Let <span class="math inline">\(y\)</span> be the height of a child and <span class="math inline">\(x\)</span> be the height of their parent, and consider a regression of <span class="math inline">\(y\)</span> on <span class="math inline">\(x\)</span>, performed in in a large population. Suppose that we estimate the regression coefficients separately for male and female parents (two separate regressions) and we find that the slope coefficient from the former regression <span class="math inline">\(\hat\beta_1^{\text{dad}}\)</span> is smaller than that from the latter <span class="math inline">\(\hat\beta_1^{\text{mom}}\)</span>. Suppose however that we find (in this same population) the sample correlation between a father’s height and their child’s height is <em>larger</em> than that between a mother’s height and their child’s height. What is a plausible explanation for what is happening here?</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+</section>
+<section id="multiple-regression" class="level1">
+<h1>Multiple regression</h1>
+<ol start="5" type="1">
+<li>(2 pts) In class, we claimed that the multiple regression coefficients, with respect to responses <span class="math inline">\(y_i\)</span> and feature vectors <span class="math inline">\(x_i \in \mathbb{R}^p\)</span>, <span class="math inline">\(i = 1,\dots,n\)</span>, can be written in two ways: the first is [ = ( <em>{i=1}^n x_i x_i^T )^{-1} </em>{i=1}^n x_i y_i. ] The second is [ = (X^T X)^{-1} X^T y, ] where <span class="math inline">\(X \in \mathbb{R}^{n \times p}\)</span> is a feature matrix, with <span class="math inline">\(i^{\text{th}}\)</span> row <span class="math inline">\(x_i\)</span>, and <span class="math inline">\(y \in \mathbb{R}^n\)</span> is a response vector, with <span class="math inline">\(i^{\text{th}}\)</span> component <span class="math inline">\(y_i\)</span>. Prove that these two expressions are equivalent.</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+<ol start="6" type="1">
+<li>(Bonus) Derive the population and sample multiple regression coefficients by solving the corresponding least squares problem (differentiating the criterion with respect to each <span class="math inline">\(\beta_j\)</span>, setting equal to zero, and solving). For the sample least squares coefficient, deriving either representation in Q5 will be fine.</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+</section>
+<section id="marginal-multiple-connection" class="level1">
+<h1>Marginal-multiple connection</h1>
+<ol start="7" type="1">
+<li>(1 pts) Consider the simple linear regression of a generic response <span class="math inline">\(y_i\)</span> on a constant predictor <span class="math inline">\(x_i = 1\)</span>, <span class="math inline">\(i = 1,\dots,n\)</span>, without intercept. Give the exact form of the sample regression coefficient.</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+<ol start="8" type="1">
+<li><p>(3 pts) Recall the connection between multiple and marginal regression coefficients, as covered in lecture: the <span class="math inline">\(j^{\text{th}}\)</span> multiple regression coefficient can be written in general as [ _j = {(^{-j}_j)^T ^{-j}_j}, ] which we interpret as the simple linear regression coefficient of <span class="math inline">\(\hat{y}^{-j}\)</span> on <span class="math inline">\(\hat{x}^{-j}\)</span>. These are <span class="math inline">\(y\)</span> and <span class="math inline">\(x_j\)</span>, respectively, after we regress out the contributions of all other features. (See the lecture notes for the precise details.)</p>
+<p>Now note that we can treat a simple linear regression with an intercept term as a multiple regression with two features, with the first feature just equal to the constant 1. Using the above formula, and the answer from Q7, re-derive the expression for the slope in the simple linear model with intercept: [ <em>1 = {</em>{i=1}^n (x_i - {x})^2}. ]</p></li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+</section>
+<section id="covariance-calculations" class="level1">
+<h1>Covariance calculations</h1>
+<ol start="9" type="1">
+<li>(3 pts) Let <span class="math inline">\(x \in \mathbb{R}^n\)</span> and <span class="math inline">\(y \in \mathbb{R}^m\)</span> be random vectors, and let <span class="math inline">\(A \in \mathbb{R}^{k \times n}\)</span> and <span class="math inline">\(B \in \mathbb{R}^{\ell \times m}\)</span> be fixed matrices. Prove that [ (Ax, By) = A (x, y) B^T. ] Prove as a consequence that <span class="math inline">\(\mathrm{Cov}(Ax) = A \mathrm{Cov}(x) A^T\)</span>. Hint: you may use the rule for covariances of linear combinations (as reviewed in the lecture from week 2, “Measures of dependence and stationarity”).</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+<ol start="10" type="1">
+<li>(2 pts) Suppose that <span class="math inline">\(y = X \beta + \epsilon\)</span>, with <span class="math inline">\(X\)</span> and <span class="math inline">\(\beta\)</span> fixed, and where <span class="math inline">\(\epsilon\)</span> is a vector with white noise entries, with variance <span class="math inline">\(\sigma^2\)</span>. Use the rule in Q9 to prove that for the sample least squares coefficients, namely, <span class="math inline">\(\hat\beta = (X^T X)^{-1} X^T y\)</span>, it holds that [ () = ^2 (X^T X)^{-1}. ]</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+<ol start="11" type="1">
+<li>(4 pts) An equivalent way to state the Gauss-Markov theorem is as follows. Under the model from Q10, if <span class="math inline">\(\tilde\beta\)</span> is any other unbiased linear estimator of <span class="math inline">\(\beta\)</span> (where linearity means that <span class="math inline">\(\tilde\beta = My\)</span> for a fixed matrix <span class="math inline">\(M\)</span>) then [ () () ] where <span class="math inline">\(\lesssim\)</span> means less than or equal to in the <em>PSD (positive semidefinite) ordering</em>. Precisely, <span class="math inline">\(A \lesssim B\)</span> if and only if <span class="math inline">\(B-A\)</span> is a PSD matrix, which recall, means <span class="math inline">\(z^T (B-A) z \geq 0\)</span> for all vectors <span class="math inline">\(z\)</span>. Prove that this is indeed equivalent to the statement of the Gauss-Markov theorem given in lecture.</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+</section>
+<section id="cross-validation" class="level1">
+<h1>Cross-validation</h1>
+<ol start="12" type="1">
+<li><p>(3 pts) Recall the R code from lecture that performs time series cross-validation to evaluate the mean absolute error (MAE) of predictions from the linear regression of cardiovascular mortality on 4-week lagged particulate levels. Adapt this to evaluate the MAE of predictions from the regression of cardiovascular mortality on 4-week lagged particulate levels and 4-week lagged temperature (2 features). Fit each regression model using a trailing window of 200 time points (not all past). Plot the predictions, and print the MAE on the plot, following the code from lecture.</p>
+<p>Additionally (all drawn on the same figure), plot the fitted values on the training set. By the training set here, we mean what is also called the “burn-in set” in the lecture notes, and indexed by times 1 through <code>t0</code> in the code. The fitted values should come from the initial regression model that is fit to the burn-in set. These should be plotted in a different color from the predictions made in time series cross-validation pass. Print the MAE from the fitted values the training set somewhere on the plot (and label this as “Training MAE” to clearly differentiate it).</p></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># CODE GOES HERE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<ol start="13" type="1">
+<li>(2 pts) Repeat the same exercise as in Q12 but now with multiple lags per variable: use lags 4, 8, 12 for each of particulate level and temperature (thus 6 features in total). Did the training MAE go down? Did the cross-validated MAE go down? Discuss. Hint: you may find it useful to know that <code>lm()</code> can take a predictor matrix, as in <code>lm(y ~ x)</code> where <code>x</code> is a matrix; in this problem, you can form the predictor matrix by calling <code>cbind()</code> on the lagged feature vectors.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># CODE GOES HERE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>[UNDER CONSTRUCTION]</p>
-<div class="row">
-<div class="column">
-<ul>
-<li><strong>Instructor</strong>: <a href="https://www.stat.berkeley.edu/~ryantibs/">Ryan Tibshirani</a> (ryantibs at berkeley dot edu)</li>
-<li><strong>GSI</strong>: Alice Cima (alice_cima at berkeley dot edu)</li>
-<li><strong>Reader</strong>: David Zhang (dzhang2324 at berkeley dot edu)</li>
-</ul>
-<p><em>Please email the GSI with any issues; the Instructor will be looped in only as-needed.</em></p>
-<ul>
-<li><strong>Class times</strong>: Mon, Weds, Fri, 1-2pm, SSB 20</li>
-<li><strong>Lab times</strong>: Fri, 2-4p and 4-6pm, Evans 332</li>
-<li><strong>Office hours</strong>: RT: Mon, 2-3pm, Evans 417</li>
-</ul>
-<p>Handy links:</p>
-<ul>
-<li><a href="syllabus">Syllabus</a></li>
-<li><a href="https://www.github.com/ryantibs/timeseries-f23">GitHub repo</a> (source files for lectures and homeworks)</li>
-<li><a href="https://edstem.org/us/courses/42044">Ed Discussion</a> (for class discussions and announcements)</li>
-<li><a href="https://bcourses.berkeley.edu/courses/1527046">bCourses</a> (for grade-keeping and homework solutions)</li>
-</ul>
+<ol start="14" type="1">
+<li>(2 pts) Repeat once more the same exercise as in the last question but but now with many lags per variable: use lags 4, 5, …, through 50 for each of particulate level and temperature (thus 47 x 2 = 94 features in total). Did the training MAE go down? Did the cross-validated MAE go down? Are you surprised? Discuss.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># CODE GOES HERE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="column">
-<p><img src="covidcast.png" class="img-fluid"></p>
-</div>
+</section>
+<section id="more-features-the-merrier" class="level1">
+<h1>More features, the merrier?</h1>
+<ol start="15" type="1">
+<li>(2 pts) Let <span class="math inline">\(y_i\)</span> be an arbitrary response, and <span class="math inline">\(x_i \in \mathbb{R}^p\)</span> be an arbitrary feature vector, for <span class="math inline">\(i = 1,\dots,n\)</span>. Let [ <em>i = (x</em>{i1}, , x_{ip}, <em>{i,p+1}),i = 1,,n ] be the result of appending one more feature. Let <span class="math inline">\(\hat{y}_i\)</span> denote the fitted values from the regression of <span class="math inline">\(y_i\)</span> on <span class="math inline">\(x_i\)</span>, and let <span class="math inline">\(\tilde{y}_i\)</span> denote the fitted values from the regression of <span class="math inline">\(y_i\)</span> on <span class="math inline">\(\tilde{x}_i\)</span>. Prove that [ </em>{i=1}^n (y_i - <em>i)^2 </em>{i=1}^n (y_i - _i)^2. ] In other words, <em>the training MSE will never get worse as we add features</em> to a given sample regression problem.</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+<ol start="16" type="1">
+<li>(2 pts) How many linearly independent features do we need (how large should <span class="math inline">\(p\)</span> be) in order to achieve a perfect training accuracy, i.e., training MSE of zero? Why?</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+<ol start="17" type="1">
+<li>(Bonus) Implement an example in R in order to verify your answer to Q16 empirically. Extra bonus points if you do it on the cardiovascular mortality data, using enough lagged features. You should be able to plot the fitted values from the training set and see that they match the observations perfectly (and the CV predictions should look super wild).</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># CODE GOES HERE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

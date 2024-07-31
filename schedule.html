@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Statistics 153: Introduction to Time Series</title>
+<title>Schedule</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,35 +66,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-buttons .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-button','listing-link','listing-color',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-button","listing-link","listing-color"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-buttons'] = new List('listing-buttons', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZLC7WVGHGY"></script>
 
 <script type="text/javascript">
@@ -107,37 +76,9 @@ gtag('js', new Date());
 gtag('config', 'G-ZLC7WVGHGY', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked">
@@ -149,7 +90,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./schedule.html">Schedule</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -182,7 +123,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
@@ -194,7 +135,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
+  <a href="./schedule.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
@@ -229,8 +170,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Statistics 153: Introduction to Time Series</h1>
-<p class="subtitle lead">UC Berkeley, Fall 2023</p>
+<h1 class="title">Schedule</h1>
 </div>
 
 
@@ -247,47 +187,100 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-buttons" class="quarto-listing quarto-listing-container-custom">
-
-  <button style="background-color: purple;"><a href="syllabus">Syllabus</a></button>
-
-  <button style="background-color: green;"><a href="https://www.github.com/ryantibs/timeseries-f23/">GitHub</a></button>
-
-  <button style="background-color: orange;"><a href="https://edstem.org/us/courses/42044/">Ed Discussion</a></button>
-
-  <button style="background-color: blue;"><a href="https://bcourses.berkeley.edu/courses/1527046">bCourses</a></button>
-
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-<p>[UNDER CONSTRUCTION]</p>
-<div class="row">
-<div class="column">
-<ul>
-<li><strong>Instructor</strong>: <a href="https://www.stat.berkeley.edu/~ryantibs/">Ryan Tibshirani</a> (ryantibs at berkeley dot edu)</li>
-<li><strong>GSI</strong>: Alice Cima (alice_cima at berkeley dot edu)</li>
-<li><strong>Reader</strong>: David Zhang (dzhang2324 at berkeley dot edu)</li>
-</ul>
-<p><em>Please email the GSI with any issues; the Instructor will be looped in only as-needed.</em></p>
-<ul>
-<li><strong>Class times</strong>: Mon, Weds, Fri, 1-2pm, SSB 20</li>
-<li><strong>Lab times</strong>: Fri, 2-4p and 4-6pm, Evans 332</li>
-<li><strong>Office hours</strong>: RT: Mon, 2-3pm, Evans 417</li>
-</ul>
-<p>Handy links:</p>
-<ul>
-<li><a href="syllabus">Syllabus</a></li>
-<li><a href="https://www.github.com/ryantibs/timeseries-f23">GitHub repo</a> (source files for lectures and homeworks)</li>
-<li><a href="https://edstem.org/us/courses/42044">Ed Discussion</a> (for class discussions and announcements)</li>
-<li><a href="https://bcourses.berkeley.edu/courses/1527046">bCourses</a> (for grade-keeping and homework solutions)</li>
-</ul>
-</div>
-<div class="column">
-<p><img src="covidcast.png" class="img-fluid"></p>
-</div>
-</div>
-
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>Week 1: Aug 23 - Aug 25</td>
+<td>Characteristics of time series</td>
+<td><a href="lectures/characteristics/characteristics.pdf">pdf</a>, <a href="lectures/characteristics/characteristics.html">html</a>, <a href="https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/characteristics">source</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Week 2: Aug 28 - Sep 1</td>
+<td>Measures of dependence</td>
+<td><a href="lectures/dependence/dependence.pdf">pdf</a>, <a href="lectures/dependence/dependence.html">html</a>, <a href="https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/dependence">source</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Week 3: Sep 6 - Sep 8</td>
+<td>Regression and prediction</td>
+<td><a href="lectures/regression/regression.pdf">pdf</a>, <a href="lectures/regression/regression.html">html</a>, <a href="https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/regression">source</a></td>
+<td>Hw 1 due Thur Sep 7</td>
+</tr>
+<tr class="even">
+<td>Week 4: Sep 11 - Sep 15</td>
+<td>Regression and prediction</td>
+<td>”</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Week 5: Sep 18 - Sep 22</td>
+<td>Regularization and smoothing</td>
+<td><a href="lectures/smoothing/smoothing.pdf">pdf</a>, <a href="lectures/smoothing/smoothing.html">html</a>, <a href="https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/smoothing">source</a></td>
+<td>Hw 2 due Thur Sep 21</td>
+</tr>
+<tr class="even">
+<td>Week 6: Sep 25 - Sep 29</td>
+<td>Regularization and smoothing</td>
+<td>”</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Week 7: Oct 2 - Oct 6</td>
+<td>Spectral analysis</td>
+<td><a href="lectures/spectral/spectral.pdf">pdf</a>, <a href="lectures/spectral/spectral.html">html</a>, <a href="https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/spectral">source</a></td>
+<td>Hw 3 due Fri Oct 6</td>
+</tr>
+<tr class="even">
+<td>Week 8: Oct 9 - Oct 13</td>
+<td>Spectral analysis</td>
+<td>”</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Week 9: Oct 16 - Oct 20</td>
+<td>ARIMA models</td>
+<td><a href="lectures/arima/arima.pdf">pdf</a>, <a href="lectures/arima/arima.html">html</a>, <a href="https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/arima">source</a></td>
+<td>Midterm Fri Oct 20</td>
+</tr>
+<tr class="even">
+<td>Week 10: Oct 23 - Oct 27</td>
+<td>ARIMA models</td>
+<td>”</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Week 11: Oct 30 - Nov 3</td>
+<td>ARIMA models</td>
+<td>”</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Week 12: Nov 6 - Nov 8</td>
+<td>ETS models</td>
+<td><a href="lectures/ets/ets.pdf">pdf</a>, <a href="lectures/ets/ets.html">html</a>, <a href="https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/ets">source</a></td>
+<td>Hw 4 due Mon Nov 6</td>
+</tr>
+<tr class="odd">
+<td>Week 13: Nov 13 - Nov 17</td>
+<td>ETS models</td>
+<td>”</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Week 14: Nov 20</td>
+<td>[Nothing! Enjoy Thanksgiving]</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Week 15: Nov 27 - Dec 1</td>
+<td>Advanced topics</td>
+<td><a href="lectures/advanced/advanced.pdf">pdf</a>, <a href="lectures/advanced/advanced.html">html</a>, <a href="https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/advanced">source</a></td>
+<td>Hw 5 due Fri Dec 1, Final Weds Dec 13</td>
+</tr>
+</tbody>
+</table>
 
 
 

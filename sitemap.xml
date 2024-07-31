@@ -1,43 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stat153.berkeley.edu/fall-2023/data.html</loc>
-    <lastmod>2024-07-25T21:07:18.476Z</lastmod>
-  </url>
-  <url>
     <loc>https://stat153.berkeley.edu/fall-2023/license.html</loc>
-    <lastmod>2024-07-25T21:07:18.477Z</lastmod>
+    <lastmod>2024-07-30T21:48:11.545Z</lastmod>
   </url>
   <url>
-    <loc>https://stat153.berkeley.edu/fall-2023/staff.html</loc>
-    <lastmod>2024-07-25T21:07:18.477Z</lastmod>
+    <loc>https://stat153.berkeley.edu/fall-2023/schedule.html</loc>
+    <lastmod>2024-07-31T00:26:47.008Z</lastmod>
   </url>
   <url>
-    <loc>https://stat153.berkeley.edu/fall-2023/units/unit3.html</loc>
-    <lastmod>2024-07-25T21:07:18.478Z</lastmod>
+    <loc>https://stat153.berkeley.edu/fall-2023/lectures/smoothing/smoothing.html</loc>
+    <lastmod>2024-07-30T22:41:27.369Z</lastmod>
   </url>
   <url>
-    <loc>https://stat153.berkeley.edu/fall-2023/units/macros.html</loc>
-    <lastmod>2024-07-25T21:07:18.478Z</lastmod>
+    <loc>https://stat153.berkeley.edu/fall-2023/lectures/regression/regression.html</loc>
+    <lastmod>2024-07-30T22:41:20.593Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stat153.berkeley.edu/fall-2023/lectures/arima/arima.html</loc>
+    <lastmod>2024-07-30T22:40:47.295Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stat153.berkeley.edu/fall-2023/supplementary.html</loc>
+    <lastmod>2024-07-30T23:38:57.124Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stat153.berkeley.edu/fall-2023/homeworks/homework5/homework5.html</loc>
+    <lastmod>2024-07-30T21:48:56.060Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stat153.berkeley.edu/fall-2023/homeworks/homework3/homework3.html</loc>
+    <lastmod>2024-07-30T22:50:59.422Z</lastmod>
   </url>
   <url>
     <loc>https://stat153.berkeley.edu/fall-2023/index.html</loc>
-    <lastmod>2024-07-25T21:07:18.477Z</lastmod>
+    <lastmod>2024-07-31T00:34:05.870Z</lastmod>
   </url>
   <url>
-    <loc>https://stat153.berkeley.edu/fall-2023/units/unit2.html</loc>
-    <lastmod>2024-07-25T21:07:18.478Z</lastmod>
+    <loc>https://stat153.berkeley.edu/fall-2023/homeworks/homework1/homework1.html</loc>
+    <lastmod>2024-07-30T22:50:34.555Z</lastmod>
   </url>
   <url>
-    <loc>https://stat153.berkeley.edu/fall-2023/units/unit1.html</loc>
-    <lastmod>2024-07-25T21:07:18.478Z</lastmod>
+    <loc>https://stat153.berkeley.edu/fall-2023/homeworks/homework2/homework2.html</loc>
+    <lastmod>2024-07-30T22:50:48.610Z</lastmod>
   </url>
   <url>
-    <loc>https://stat153.berkeley.edu/fall-2023/syllabus.html</loc>
-    <lastmod>2024-07-25T21:07:18.477Z</lastmod>
+    <loc>https://stat153.berkeley.edu/fall-2023/homeworks/homework4/homework4.html</loc>
+    <lastmod>2024-07-30T22:51:09.538Z</lastmod>
   </url>
   <url>
-    <loc>https://stat153.berkeley.edu/fall-2023/calendar.html</loc>
-    <lastmod>2024-07-25T21:07:18.476Z</lastmod>
+    <loc>https://stat153.berkeley.edu/fall-2023/lectures/characteristics/characteristics.html</loc>
+    <lastmod>2024-07-30T23:36:06.963Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stat153.berkeley.edu/fall-2023/lectures/ets/ets.html</loc>
+    <lastmod>2024-07-30T22:40:40.079Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stat153.berkeley.edu/fall-2023/lectures/spectral/spectral.html</loc>
+    <lastmod>2024-07-30T22:41:33.821Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stat153.berkeley.edu/fall-2023/lectures/dependence/dependence.html</loc>
+    <lastmod>2024-07-30T22:40:55.982Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stat153.berkeley.edu/fall-2023/homework.html</loc>
+    <lastmod>2024-07-30T23:45:23.889Z</lastmod>
   </url>
 </urlset>
