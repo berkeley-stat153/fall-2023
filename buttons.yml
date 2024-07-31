@@ -1,9 +1,12 @@
-- button: Ed
-  link: https://ibm.com
+- button: Syllabus
+  link: syllabus
   color: purple
-- button: DataHub
-  link: https://ibm.com
+- button: GitHub
+  link: https://www.github.com/ryantibs/timeseries-f23/
   color: green
-- button: Gradescope
-  link: https://ibm.com
+- button: Ed Discussion
+  link: https://edstem.org/us/courses/42044/
   color: orange
+- button: bCourses
+  link: https://bcourses.berkeley.edu/courses/1527046
+  color: blue 

@@ -1,6 +1,10 @@
 project:
   type: website
 
+render:
+  - "*.qmd"
+  - "!*.qmd"
+
 website:
   site-url: https://stat153.berkeley.edu/fall-2023/
   google-analytics: G-ZLC7WVGHGY
@@ -13,20 +17,15 @@ website:
         href: https://github.com/berkeley-153/fall-2023/
     contents:
       - href: index.qmd
-        text: Home / Schedule
-      - href: syllabus.qmd
+        text: Home 
+      - href: syllabus.pdf
         text: Syllabus
-      - href: staff.qmd
-        text: Staff
-      - href: calendar.qmd
-        text: Calendar
-      - section: "Units"
-        contents:
-          - units/unit1.qmd
-          - units/unit2.ipynb
-          - units/unit3.qmd
-      - href: data.qmd
-        text: Datasets
+      - href: schedule.qmd
+        text: Schedule
+      - href: homework.qmd
+        text: Homework
+      - href: supplementary.qmd
+        text: Supplementary Resources
       - href: license.qmd
         text: License
           
