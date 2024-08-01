@@ -1,5 +1,4 @@
 ---
-title: "Supplementary Resources"
 format:
   html:
     theme: cosmo

@@ -16,7 +16,6 @@ format:
 :::: {layout="[ 60, 40 ] "}
 
 ::: {#first-column}
-[UNDER CONSTRUCTION]
 
 - **Instructor**: [Ryan Tibshirani](https://www.stat.berkeley.edu/~ryantibs/) (ryantibs at berkeley dot edu)
 - **GSI**: Alice Cima (alice_cima at berkeley dot edu)
