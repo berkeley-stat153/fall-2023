@@ -22,9 +22,9 @@ website:
         text: Syllabus
       - href: index.qmd#schedule
         text: Schedule
-      - href: homework.qmd
+      - href: index.qmd#homework
         text: Homework
-      - href: supplementary.qmd
+      - href: index.qmd#supplementary-resources
         text: Supplementary Resources
       - href: license.qmd
         text: License
