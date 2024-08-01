@@ -1,5 +1,4 @@
 ---
-title: "Homework"
 format:
   html:
     theme: cosmo

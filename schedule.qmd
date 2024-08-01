@@ -1,5 +1,4 @@
 ---
-title: "Schedule"
 format:
   html:
     theme: cosmo
