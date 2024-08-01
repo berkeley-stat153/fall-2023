@@ -20,7 +20,7 @@ website:
         text: Home 
       - href: syllabus.pdf
         text: Syllabus
-      - href: schedule.qmd
+      - href: index.qmd#schedule
         text: Schedule
       - href: homework.qmd
         text: Homework
