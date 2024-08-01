@@ -5,16 +5,18 @@ listing:
   - id: buttons
     template: assets/buttons.ejs
     contents: buttons.yml
+format:
+  html:
+    page-layout: full
 ---
 
 ::: {#buttons}
 :::
 
+:::: {layout="[ 60, 40 ] "}
+
+::: {#first-column}
 [UNDER CONSTRUCTION]
-
-<div class="row">
-  <div class="column">
-
 
 - **Instructor**: [Ryan Tibshirani](https://www.stat.berkeley.edu/~ryantibs/) (ryantibs at berkeley dot edu)
 - **GSI**: Alice Cima (alice_cima at berkeley dot edu)
@@ -33,12 +35,10 @@ Handy links:
 - [Ed Discussion](https://edstem.org/us/courses/42044) (for class discussions and announcements)
 - [bCourses](https://bcourses.berkeley.edu/courses/1527046) (for grade-keeping and homework solutions)
 
+:::
 
-</div>
-  <div class="column">
-
+::: {#second-column}
 ![](covidcast.png)
+:::
 
-
-</div>
-</div>
+:::
