@@ -14,10 +14,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week 1: Aug 23 - Aug 25\nCharacteristics of time series\npdf, html, source\n\n\n\nWeek 2: Aug 28 - Sep 1\nMeasures of dependence\npdf, html, source\n\n\n\nWeek 3: Sep 6 - Sep 8\nRegression and prediction\npdf, html, source\nHw 1 due Thur Sep 7\n\n\nWeek 4: Sep 11 - Sep 15\nRegression and prediction\n”\n\n\n\nWeek 5: Sep 18 - Sep 22\nRegularization and smoothing\npdf, html, source\nHw 2 due Thur Sep 21\n\n\nWeek 6: Sep 25 - Sep 29\nRegularization and smoothing\n”\n\n\n\nWeek 7: Oct 2 - Oct 6\nSpectral analysis\npdf, html, source\nHw 3 due Fri Oct 6\n\n\nWeek 8: Oct 9 - Oct 13\nSpectral analysis\n”\n\n\n\nWeek 9: Oct 16 - Oct 20\nARIMA models\npdf, html, source\nMidterm Fri Oct 20\n\n\nWeek 10: Oct 23 - Oct 27\nARIMA models\n”\n\n\n\nWeek 11: Oct 30 - Nov 3\nARIMA models\n”\n\n\n\nWeek 12: Nov 6 - Nov 8\nETS models\npdf, html, source\nHw 4 due Mon Nov 6\n\n\nWeek 13: Nov 13 - Nov 17\nETS models\n”\n\n\n\nWeek 14: Nov 20\n[Nothing! Enjoy Thanksgiving]\n\n\n\n\nWeek 15: Nov 27 - Dec 1\nAdvanced topics\npdf, html, source\nHw 5 due Fri Dec 1, Final Weds Dec 13",
-    "crumbs": [
-      "Schedule"
-    ]
+    "text": "Week 1: Aug 23 - Aug 25\nCharacteristics of time series\npdf, html, source\n\n\n\nWeek 2: Aug 28 - Sep 1\nMeasures of dependence\npdf, html, source\n\n\n\nWeek 3: Sep 6 - Sep 8\nRegression and prediction\npdf, html, source\nHw 1 due Thur Sep 7\n\n\nWeek 4: Sep 11 - Sep 15\nRegression and prediction\n”\n\n\n\nWeek 5: Sep 18 - Sep 22\nRegularization and smoothing\npdf, html, source\nHw 2 due Thur Sep 21\n\n\nWeek 6: Sep 25 - Sep 29\nRegularization and smoothing\n”\n\n\n\nWeek 7: Oct 2 - Oct 6\nSpectral analysis\npdf, html, source\nHw 3 due Fri Oct 6\n\n\nWeek 8: Oct 9 - Oct 13\nSpectral analysis\n”\n\n\n\nWeek 9: Oct 16 - Oct 20\nARIMA models\npdf, html, source\nMidterm Fri Oct 20\n\n\nWeek 10: Oct 23 - Oct 27\nARIMA models\n”\n\n\n\nWeek 11: Oct 30 - Nov 3\nARIMA models\n”\n\n\n\nWeek 12: Nov 6 - Nov 8\nETS models\npdf, html, source\nHw 4 due Mon Nov 6\n\n\nWeek 13: Nov 13 - Nov 17\nETS models\n”\n\n\n\nWeek 14: Nov 20\n[Nothing! Enjoy Thanksgiving]\n\n\n\n\nWeek 15: Nov 27 - Dec 1\nAdvanced topics\npdf, html, source\nHw 5 due Fri Dec 1, Final Weds Dec 13"
   },
   {
     "objectID": "lectures/smoothing/smoothing.html",
@@ -69,7 +66,17 @@
     "href": "index.html",
     "title": "Statistics 153: Introduction to Time Series",
     "section": "",
-    "text": "Syllabus\n\n  GitHub\n\n  Ed Discussion\n\n  bCourses\n\n\nNo matching items\n\n\n[UNDER CONSTRUCTION]\n\n\n\nInstructor: Ryan Tibshirani (ryantibs at berkeley dot edu)\nGSI: Alice Cima (alice_cima at berkeley dot edu)\nReader: David Zhang (dzhang2324 at berkeley dot edu)\n\nPlease email the GSI with any issues; the Instructor will be looped in only as-needed.\n\nClass times: Mon, Weds, Fri, 1-2pm, SSB 20\nLab times: Fri, 2-4p and 4-6pm, Evans 332\nOffice hours: RT: Mon, 2-3pm, Evans 417\n\nHandy links:\n\nSyllabus\nGitHub repo (source files for lectures and homeworks)\nEd Discussion (for class discussions and announcements)\nbCourses (for grade-keeping and homework solutions)",
+    "text": "Syllabus\n\n  GitHub\n\n  Ed Discussion\n\n  bCourses\n\n\nNo matching items",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Statistics 153: Introduction to Time Series",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\nWeek 1: Aug 23 - Aug 25\nCharacteristics of time series\npdf, html, source\n\n\n\nWeek 2: Aug 28 - Sep 1\nMeasures of dependence\npdf, html, source\n\n\n\nWeek 3: Sep 6 - Sep 8\nRegression and prediction\npdf, html, source\nHw 1 due Thur Sep 7\n\n\nWeek 4: Sep 11 - Sep 15\nRegression and prediction\n”\n\n\n\nWeek 5: Sep 18 - Sep 22\nRegularization and smoothing\npdf, html, source\nHw 2 due Thur Sep 21\n\n\nWeek 6: Sep 25 - Sep 29\nRegularization and smoothing\n”\n\n\n\nWeek 7: Oct 2 - Oct 6\nSpectral analysis\npdf, html, source\nHw 3 due Fri Oct 6\n\n\nWeek 8: Oct 9 - Oct 13\nSpectral analysis\n”\n\n\n\nWeek 9: Oct 16 - Oct 20\nARIMA models\npdf, html, source\nMidterm Fri Oct 20\n\n\nWeek 10: Oct 23 - Oct 27\nARIMA models\n”\n\n\n\nWeek 11: Oct 30 - Nov 3\nARIMA models\n”\n\n\n\nWeek 12: Nov 6 - Nov 8\nETS models\npdf, html, source\nHw 4 due Mon Nov 6\n\n\nWeek 13: Nov 13 - Nov 17\nETS models\n”\n\n\n\nWeek 14: Nov 20\n[Nothing! Enjoy Thanksgiving]\n\n\n\n\nWeek 15: Nov 27 - Dec 1\nAdvanced topics\npdf, html, source\nHw 5 due Fri Dec 1, Final Weds Dec 13",
     "crumbs": [
       "Home"
     ]
