@@ -8,26 +8,6 @@ render:
 website:
   site-url: https://stat153.berkeley.edu/fall-2023/
   google-analytics: G-ZLC7WVGHGY
-  sidebar:
-    style: docked
-    title: "Stat 153"
-    logo: assets/stat_bear.png
-    tools:
-      - icon: github
-        href: https://github.com/berkeley-153/fall-2023/
-    contents:
-      - href: index.qmd
-        text: Home 
-      - href: syllabus.pdf
-        text: Syllabus
-      - href: index.qmd#schedule
-        text: Schedule
-      - href: index.qmd#homework
-        text: Homework
-      - href: index.qmd#supplementary-resources
-        text: Supplementary Resources
-      - href: license.qmd
-        text: License
           
 
 format:
